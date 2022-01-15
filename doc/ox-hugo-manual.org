@@ -491,6 +491,13 @@ references inserted by Pandoc inserted (See
 
 To prevent the insertion of that Markdown heading, set this variable
 to an empty string (=""=).
+**** =org-hugo-backend=
+- Default value :: ='hugo=
+
+  This configures the export backend to use when exporting. Normally
+  this variable should be changed when you want to use
+  =org-export-define-derived-backend= to customize parts of the normal
+  =ox-hugo= backend.
 ** Screenshots Intro
 :PROPERTIES:
 :CUSTOM_ID: screenshots_intro
