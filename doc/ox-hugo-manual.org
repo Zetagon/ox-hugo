@@ -2223,6 +2223,24 @@ My post content.
 :END:
 **** External Links
 **** Internal Links
+*** Derived export backend
+
+Org mode has a mechanism for creating advanced customizations for
+exporting by creating entirely new export backends based on an
+existing backend:
+https://orgmode.org/manual/Adding-Export-Back_002dends.html
+
+In order use a export backend derived from ox-hugo, set the variable
+=org-hugo-backend= to your export backend.
+
+#+begin_src emacs-lisp
+(org-export-define-derived-backend 'hugo 'my-new-backend
+  ;; Insert body here
+  )
+
+(setq org-hugo backend 'my-new-backend)
+#+end_src
+
 ** Enhancements
 :PROPERTIES:
 :EXPORT_HUGO_MENU: :menu "6.enhancements"
